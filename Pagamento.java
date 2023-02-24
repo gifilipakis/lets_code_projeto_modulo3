@@ -91,7 +91,7 @@ public class Pagamento implements Runnable {
 
     public void escreveArquivo() {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MM-yyyy");
-        String str = "src/pagamentos/atualizacoes/pagamentos_"+this.dataVencimento.format(dateTimeFormatter)+".txt";
+        String str = "atualizacoes/pagamentos_"+this.dataVencimento.format(dateTimeFormatter)+".txt";
         Path path = Paths.get(str);
         try {
             Files.createFile(path);

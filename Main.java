@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader("src\\pagamentos\\pagamentos.csv"));
+        BufferedReader reader = new BufferedReader(new FileReader("pagamentos.csv"));
         String line = null;
         while ((line = reader.readLine()) != null) {
             String[] splits = line.split(";");
